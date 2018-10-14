@@ -36,7 +36,7 @@ else:
     print("Usage: %s username" % (sys.argv[0],))
     sys.exit()
 
-token = util.prompt_for_user_token(username, scope, client_id='f64ba14936cf46c88401d49b5a94f160', client_secret='162af3593b654c6b81ddc8b6f9c1c0c5', redirect_uri='127.0.0.1/callback')
+token = util.prompt_for_user_token(username, scope, client_id='PLACEHOLDER', client_secret='PLACEHOLDER', redirect_uri='127.0.0.1/callback')
 
 if token:
     sp = spotipy.Spotify(auth=token)
